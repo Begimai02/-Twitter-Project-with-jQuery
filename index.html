@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/17cffd79c3.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- EDIT POST MODAL -->
+    <div class="modal__block">
+        <div class="modal">
+            <div class="modal_exitBtn">
+                <button class="modal_exit">X</button>
+            </div>
+            <div class="modal_Container">
+                <div class="modal_inputs">
+                    <input class="modal-inp" type="text" id="nameModal"> <br>
+                    <input type="text" class="modal-url">
+                    <button id="modal-save">Изменить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADDING MODAL POST -->
+
+    <div class="add__modal-block">
+        <div class="add__modal-content">
+            <div class="add__modal_close-btn">
+                <button class="modal_close-btn">X</button>
+            </div>
+            <div class="add__modal_Container">
+                <div class="add__modal_input">
+                    <input class="add__modal-inp" type="text" id="nameModal"> <br>
+                    <button id="add__modal-save">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="header">
+            <div class="header__photo">
+                <div class="header__photo-back"></div>
+                <div class="header__photo-ava"></div>
+                <div class="header__photo-btn">
+                    <button class="header__photo-BTN">Изменить профиль</button>
+                </div>
+            </div>
+            <div class="header__info">
+                <div class="header__info-name"><b>Jon Snow</b></div>
+                <div class="header__info-nickname">@northsking</div>
+                <div class="header__info-description">Prince of Dragonstone <div>
+                        <div class="header__info-location">
+                            <div>
+
+                                <div>
+                                    <span class="header__info-location1"><i class="fas fa-map-marker-alt"></i>
+                                        Winterfell</span>
+                                </div>
+                                <div>
+                                    <span class="header__info-location2"><i class="far fa-calendar-alt"></i>
+                                        Регистрация:
+                                        май 2017 г.</span>
+                                </div>
+                            </div>
+                            <!-- <p id="especial">Регистрация: май 2017 г.</p> -->
+                        </div>
+                        <div class="header__info-follower">
+                            <span class="ceil"><b class="header__info-follower1">20</b> в читаемых</span>
+                            <span><b class="header__info-follower2">15m</b> читателей</span>
+                        </div>
+                    </div>
+                    <div class="header__current-block">
+                        <div class="header__current-block2">Твиты</div>
+                        <div class="header__current-block3">Твиты и ответы</div>
+                        <div class="header__current-block4">Медиа</div>
+                        <div class="header__current-block5">Нравится</div>
+                    </div>
+                    <br>
+                    <span class="header__current-twit"></span>
+                </div>
+
+                <div class="content"></div>
+
+
+            </div>
+            <div class="block1">
+
+            </div>
+
+
+
+
+
+            <div class="content">
+                <div class="content__post">
+                    <!-- <img src="'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kit-harington-hair-jon-snow-1569167827.jpg?crop=0.439xw:0.878xh;0.0221xw,0.0306xh&resize=480:*'" alt=""> -->
+                    <input type="text" class="post-inp" placeholder="Что происходит?">
+                    <div class="post-btns">
+                        <div class="post-add">
+                            <button class="btn-post post-btn_img"><i class="far fa-image"></i></button>
+                            <button class="btn-post post-btn_gif">gif</button>
+                            <button class="btn-post post-btn_emoji"><i class="far fa-smile"></i></button>
+                            <button class="btn-post post-btn_setPost"><i class="fas fa-calendar-day"></i></button>
+                        </div>
+
+                        <button class="post-btn">Твитнуть</button>
+                    </div>
+                </div>
+
+                <div class="searchDiv">
+                    <i class="fas fa-search" id="search-icon"></i>
+                    <input type="text" class="search" placeholder="Искать">
+                </div>
+                <ul class="newPosts">
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="pag__btns">
+            <button class="pag-btn previous-btn">Prev</button>
+            <button class="pag-btn next-btn">Next</button>
+        </div>
+
+    </div>
+        <script src="./js/main.js"></script>
+</body>
+
+</html>
