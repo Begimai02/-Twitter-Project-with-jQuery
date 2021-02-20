@@ -11,7 +11,8 @@ let page = 1;
 let searchText = '';
 
 let likes = 0
-let thisPostLike
+let thisPostLike;
+let newLikes
 
 $('.search').on('input', function(e){
     searchText = e.target.value;
@@ -25,6 +26,7 @@ $('.search').on('input', function(e){
 $('body').on('click', '.btn-like', function(event){
     thisPostLike = event.target.parentNode.id;
     let likesCount = event.target.id
+    newLikes = likesCount
     console.log(likesCount)
     likesCount++
     let obj1 = {
@@ -114,7 +116,8 @@ $('body').on('click', '.btn-edit', function(event){
 $('#modal-save').on('click', function(e){
     let obj = {
         post: $('.modal-inp').val(),
-        image: $('.modal-url').val()
+        image: $('.modal-url').val(),
+        likes: newLikes
     }
     fetch(`http://localhost:8000/posts/${editItemId}`, {
         method: "PUT",
